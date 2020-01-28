@@ -33,7 +33,7 @@
 <!-- Bootstrap readable theme  CSS -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
-bootstrap-readable-theme.css
+
 
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -66,6 +66,11 @@ bootstrap-readable-theme.css
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true }">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- Footer comes here -->
