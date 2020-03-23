@@ -24,15 +24,19 @@
 <title>Online Shopping - ${title}</title>
 <script>
 	window.menu = '${title}';
+	window.contextRoot='${contextRoot}'
 </script>
 
 
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
 <!-- Bootstrap readable theme  CSS -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
+<!-- Bootstrap dataTables  CSS -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 
 <!-- Custom CSS -->
@@ -71,6 +75,11 @@
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 			
+			<!-- load only when users clicks show product -->
+			<c:if test="${userClickShowProduct==true }">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- Footer comes here -->
@@ -81,6 +90,15 @@
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!-- DataTables Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		
+		<!-- DataTables Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		
 
 		<!-- self coded JavaScript -->
 
