@@ -21,10 +21,10 @@
 	<dependencies>
 		<dependency>
 
-			<!-- JUNIT VERSION 4.12 -->
+			<!-- JUNIT VERSION 4.13.1 -->
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- SPRING -->
